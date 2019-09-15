@@ -18,4 +18,4 @@ app.get('/api/posts', (req, res, next)=> {
 app.get('/', (req, res, next)=> res.sendFile(path.join(__dirname, 'index.html')));
 
 syncAndSeed()
-  .then(()=> app.listen(3001, ()=> console.log('listening on port 3001')));
+  .then(()=> app.listen(3000, ()=> console.log('listening on port 3000')));
