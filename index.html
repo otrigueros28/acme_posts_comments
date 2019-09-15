@@ -32,11 +32,12 @@ nav {
       };
 
       const Posts = ({ posts, tags, match })=> {
+        console.log(posts);
         console.log(tags);
         return (
           <ul>
             { posts.map(post => <li key={ post.id }>
-              <Link to={`/posts/${post.id}`}>{ post.topic }</Link>
+              <Link to={`/posts/${post.id}`}>{ post.name }</Link>
               {
                 match.params.id === post.id && (
                   <ul>
